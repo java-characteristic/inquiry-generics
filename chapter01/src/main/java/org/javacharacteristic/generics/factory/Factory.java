@@ -12,12 +12,9 @@ public class Factory<S extends SourceEntity, T extends TargetEntity> {
         Type[] types = type();
         Class<SourceEntity> sourceEntityClass = (Class<SourceEntity>) types[0];
         System.out.println(sourceEntityClass.newInstance());
-<<<<<<< HEAD
 
         Class<SourceEntity> targetEntityClass = (Class<SourceEntity>) types[1];
         System.out.println(targetEntityClass.newInstance());
-=======
->>>>>>> a318308bde5c816358efa3efea77c0defa96a5ed
     }
 
     public Type[] type() {

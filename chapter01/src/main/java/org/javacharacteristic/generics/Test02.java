@@ -17,4 +17,5 @@ public class Test02 {
 
     public static final class Factory$2 extends Factory<SourceEntity2, TargetEntity2> {
     }
+
 }
