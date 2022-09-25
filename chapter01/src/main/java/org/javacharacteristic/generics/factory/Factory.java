@@ -10,10 +10,10 @@ public class Factory<S extends SourceEntity, T extends TargetEntity> {
 
     public void accept() throws Exception {
         Type[] types = type();
-        Class<SourceEntity> sourceEntityClass = (Class<SourceEntity>) types[0];
+        Class<S> sourceEntityClass = (Class<S>) types[0];
         System.out.println(sourceEntityClass.newInstance());
 
-        Class<SourceEntity> targetEntityClass = (Class<SourceEntity>) types[1];
+        Class<T> targetEntityClass = (Class<T>) types[1];
         System.out.println(targetEntityClass.newInstance());
     }
 
